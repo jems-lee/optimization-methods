@@ -90,6 +90,3 @@ def opt_f(beta, X, y, reg):
 def opt_f_grad(beta, X, y, reg):
     return neg_loglike_grad(beta, X, y) + reg * utils.grad_L1(beta)
 
-
-def logistic_L1_G(beta, X):
-    return beta - utils.soft_thresholding
